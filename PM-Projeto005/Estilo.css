@@ -1,0 +1,151 @@
+/*FORMATAÇÃO DO BODY*/
+body {
+    /*muda a cor do body*/
+    background-color: #9b9b9b;
+    
+    /*Afasta a tabela 45px da margem do body*/
+    padding: 45px;
+    
+    /*Define a fonte*/
+    Font-family: 'Roboto', sans-serif;
+    
+    /*O Antialised melhora a resolução da fonte%*/
+    -Webkit-font-smoothing: antialised;
+    
+    /*Define o tamanho da fonte*/
+    font-size: 13px;
+    
+     /*Define o peso da fonte*/
+    font-weight: 400px;
+}
+
+
+/*FORMATAÇÃO DA TABLE*/
+table {
+    /*muda a cor da table*/
+    background-color: #fff;
+    
+    /*Ajusta a tabela em 100%*/
+    width: 100%;
+    
+     /*Retira os espaçamentos da tabela*/
+    border-spacing: 0;
+    
+    /*Arredondar as bordas inferiores da table*/
+    border-radius: 0px 0px 3px 3px;
+    
+    /*coloca uma leve sombra na parte inferior da table*/
+    box-shadow: 0px 2px 5px #666;
+}
+
+
+/*FORMATAÇÃO DO CAPTION*/
+table caption {
+    background-color: #fff;
+    
+    /*Alinha o texto do caption a esquerda%*/
+    text-align: left;
+    
+    /*Dar uma margem de 20px do caption%*/
+    padding: 20px;
+    
+    /*Ajusta o peso da font para 500px%*/
+    font-weight: 500px;
+    
+    /*Ajusta o tamanho da font para 20px%*/
+    font-size: 20px;
+    
+    /*Arredondar as bordas superiores do Caption*/
+    border-radius: 3px 3px 0px 0px;
+    
+    /*coloca uma leve sombra na parte superior do Caption*/
+    box-shadow: 0px -2px 3px #666;
+}
+
+
+
+ /*FORMATAÇÃO DA THEAD TH*/
+table thead th {
+    
+     /*Alinha a esquerda*/
+    text-align: left;
+    
+     /*Define o tamanho da fonte*/
+    font-size: 14px;
+    
+     /*Define o peso da fonte*/
+    font-weight: 500;
+}
+
+
+/*FORMATAÇÃO DO TD*/
+table td {
+    
+    /*Coloca uma borda fina abaixo de cada linha*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10PX;
+    padding-bottom: 10PX;
+    
+}
+
+/*FORMATAÇÃO DO Th*/
+table th {
+    
+     /*Coloca uma borda fina e clara abaixo de cada linha*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10PX;
+    padding-bottom: 10PX;
+    
+}
+
+/*Centraliza os checkbox*/
+tbody td:first-child,thead th:first-child {
+    
+    width: 80px;
+    text-align: center;
+}
+
+/*Altera a cor da linha quando o mouse passa por cima*/
+tbody tr:hover {
+    
+    background-color: #eeeeee;
+}
+
+/*FORMATAÇÃO DO RODA-PÉ*/
+tfoot {
+    
+    /*Alinha a direita*/
+    text-align: right;
+    
+    /*altera o tamanho da fonte*/
+    font-size: 12px;
+    
+    /*Altera a opacidade do texto*/
+    opacity: 0.5;
+}
+
+tfoot td {
+    
+    padding: 20px;
+}
+
+/*Ajusta a margem do texto (1-10 de 100)*/
+tfoot td span {
+    
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*ajusta a margem da imagem dos botões (anterior e próximo)*/
+tfoot td img {
+    
+    margin-left: 20px;
+}
+
+/*Ajusta o select*/
+select {
+    
+    border: none;
+    border-right-color: transparent;
+}
+
