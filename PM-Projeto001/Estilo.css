@@ -1,31 +1,68 @@
+
+/*NORMALIZAÇÃO DO CÓDIGO*/
+/*Boa prática, zerar todas as margens*/
+
 * {
+    
     margin: 0;
     padding: 0;
 }
 
+/*FORMATAÇÃO DO BODY*/
 body {
     
+    /*muda cor de fondo*/
     background-color: #ecf0f1;
+    
+    /*muda o espaçamento interno*/
     padding: 12px;
+    
+    /*Muda o tipo da fonte*/
     font-family: Arial;
+    
+    /*MSuda o tamanho da fonte*/
     font-size: 18px;
 }
 
+/*FORMATAÇÃO DO h1 e h2*/
 h1, h2 {
+    
+    /*Centraliza o titulo*/
     text-align: center
 }
 
+
 h2 {
+    
+    /*Transforma texto em maiúsculo*/
     text-transform: uppercase;
+    
+    /*muda cor do texto*/
     color:#666;
+    
+    /*muda tamanho da fonte*/
     font-size: 16px;
+    
+    /*muda a margem inferior*/
     margin-bottom: 12px;
 }
     
+/*FORMATAÇÃO DA li*/
+
     li {
+        
+        /*Retira os marcadores da lista*/
         list-style-type: none;
+        
+        /*muda a cor de fundo da lista*/
         background-color: #9b59b6;
+        
+        /*Muda a cor do texto*/
         color: #ffffff;
+        
+        /*muda a margem inferiror*/
         margin-bottom: 12px;
+        
+        /*muda espaçamento interno */
         padding: 6px;
     }

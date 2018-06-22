@@ -2,33 +2,59 @@
 body{
     
     background-color: #745cc1; 
+    
+    /*O Text-align é muito utilizado para centralizar elementos como texto, não é muito recomendado para div e imagens mas em aguns casos é possível usar em imagens como agora.*/
     text-align: center; 
+    
+    /*Renderiza melhor os textos*/
     -webkit-font-smoothing: antialiased;
     
 }
 
 img {
-    margin-top: 65px; <!-aumenta a margem de cima-> 
+    margin-top: 65px; /*aumenta a margem de cima*/ 
 }
 
 input {
-    <!-coloca os inputs abaixo do outro->
-    display: block; 
+    
+    /*coloca os inputs abaixo do outro*/
+    display: block;
+    
+    /*ajusta a largura para 100%*/
     width: 100%;
+    
+    /*Adiciona uma margem inferior no input*/
     margin-bottom: 50px;
+    
+    /*deixa o texto do inpt transparente*/
     background-color: transparent;
+    
+    /*retira a borda padrão e configura apenas uma borda inferior*/
     border: none;
     border-bottom: 1px solid #fff;
 }
 
+/*FORMATAÇÃO DO BOTÃO LOGIN*/
 button {
+    
+    /*ajusta o botão em 100%*/
     width: 100%;
+    
     background-color: #fff;
+    
+    /*O border-radius arredonda as bordas do botão em 40px*/
     border-radius: 40px;
     height: 50px;
+    
+    /*torna o texto Maiúsculo*/
     text-transform: uppercase;
+    
+    /*coloca uma sombra no botão*/
     box-shadow: 0 2px 3px 0 #000;
+    
+    /*Retira a pequena borda padrão das imagens*/
     border: none;
+    
     color: #39393a;
     font-weight: 500;
     font-size: 18px;
@@ -37,17 +63,26 @@ button {
 
 a {
     color: #fff;
+    
+    /*Retira o sublinhado do link*/
     text-decoration: none;
+    
+    /*Configura a sombra do link*/
     text-shadow: 1px 1px 0 #000;
+    
     font-size: 14px;
     font-weight: 400;
     font-family:'roboto', sans-serif;
 }
 
+/*FORMATAÇÃO DO FORMULÁRIO*/
 form {
+    
+    /*O espaçamento interno da parte superior é 60px/ o do lado direito 60px/ a parte inferio 5px/ e o lado esquerdo 60px */
     padding: 60px 60px 5px 60px;
 }
 
+/*É utilizado para renderizar os elementos, neste caso usei porque o textos dos inputs não estavam aparecendo*/
 ::-webkit-input-placeholder {
     color: #fff;
     font-family:'roboto', sans-serif;

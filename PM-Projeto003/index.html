@@ -1,9 +1,16 @@
 <!doctype html>
+
+<!--Uma boa prática ao iniciar um código é digitar html+tab-->
 <html lang="pt_br">
     <head>
+       
+       <!--Para caracteres especiais-->
         <meta charset="utf-8">
         <title>Login</title>
+        
+        <!--Para zerar todas as margens, deve ser colocado antes do estilo.css/ Renderiza objetos conforme o brouser otilizado para não haver diferença de um servidor para outro-->
         <link rel="stylesheet" href="normalize.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
         <link rel="stylesheet" href="estilo.css">
     </head>
@@ -11,13 +18,25 @@
         
         <img src="1-layers.png">
         
+        <!--Tag de formulário, para usar digite form+tab-->
         <form action="">
            <!-O placeholder coloca o nome seu e_mail->
+           
+           <!--Imput é para entrada de dados do usuário/ é inline(fica um ao lado do outro) para colocar abaixo vá no css e digite input { display: block};-->
+           
+           <!--Placeholder coloca o texto dentro do input indicando o que o usuário deve digitar no input.-->
+           
+           <!--e_mail faz com que se digitar algum texto que não seja um e-mail, ele não permite-->
             <input type="e_mail" placeholder="Seu e_mail">
+            
+            <!--Password é para a senha ficar tuda em Asteristico-->
             <input type="password" placeholder="Senha">
+            
+            <!--tag para colocar um botão-->
             <button>Login</button>
         </form>
         
+        <!--link para ir para a página de restaurar senha-->
         <a href="Nova_Senha.html">Esqueci minha senha</a>
     </body>
 </html>
