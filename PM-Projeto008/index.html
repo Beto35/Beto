@@ -1,0 +1,147 @@
+<!--Começa com html:5+tab-->
+
+<!--Define que o tipo do documento é html-->
+<!DOCTYPE html>
+
+<!--Define que o indioma do site é português-->
+<html lang="pt-br">
+
+<head>
+   
+     <!--Configura para não ocorrer erro com caracteres especiais-->
+    <meta charset="UTF-8">
+    
+    <!--Titulo da Página-->
+    <title>Projeto 008</title>
+    
+    <!--Zera todas as margens-->
+    <link rel="stylesheet" href="normalize.css">
+    
+    <!--Conecta o estilo.css-->
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!--Link que pega os icones direto da site fontawesome, acesse o site fontawesome.com e copie o link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    
+    <!--ajusta a pagina para versão mobile, deixando o site responsivo.-->
+    <meta name="viewport" content="width:device-width, initial-scale=1">
+    
+    <!--Estilo provisório, usado apenas para ajudar na estrutura do layout da página, depois deve ser excluído-->
+    <style>
+        /*parametrização da aside(menu)*/
+        aside {
+            /*Parametriza a largura, altura e cor de fundo*/
+            
+            height: 100vh;
+            
+        }
+        
+        /*parametrização da section (seção)*/
+        section {
+            /*Parametriza a largura, altura e cor de fundo*/
+            width: 100px;
+            height: 100vh;
+            color: #fff;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <!--A tag aside é usada para fazer o menu-->
+    <aside>
+        <!--vou colocar o texto do logotipo-->
+            <h1><span>Nucliot</span></h1>
+            
+        <!--Crio o menu, como é um menu de navegação coloco a tag nav e dentro a ul e depois a li-->
+        <nav>
+            <ul>
+              
+               <!--Primeiro item da lista de menu(Balance)-->
+                <li><a href="#">
+                 
+                 <!--Este codigo eu copie e colei do site fontawesome, cliquei em icones, pesquisei o nome do icone, identifiquei e copiei o codigo-->
+                  <i class="fas fa-dollar-sign"></i>
+                  
+                   <span>Balance</span>
+                   <!--coloque o small porque depois do balance tem o $ 322-->
+                   <small>$ 322</small>
+                    </a>
+                </li>
+                
+                
+                <!--Segundo item da lista de menu(Dashbord)-->
+                <li><a href="#">
+                 
+                 <!--Este codigo eu copie e colei do site fontawesome, cliquei em icones, pesquisei o nome do icone, identifiquei e copiei o codigo-->
+                  <i class="fas fa-chart-area"></i>
+                  
+                   <span>Dashboard</span>
+                   <!--ele não tem o $ 322 depois como ocorre no primeiro item acima por isso estou apenas comentando o small
+                   <small>$ 322</small>-->
+                    </a>
+                </li>
+                
+                 <!--Terceiro item da lista de menu(Dashbord)-->
+                <li><a href="#">
+                 
+                 <!--Este codigo eu copie e colei do site fontawesome, cliquei em icones, pesquisei o nome do icone, identifiquei e copiei o codigo-->
+                  <i class="fas fa-signal"></i>
+                  
+                   <span>Base Stations</span>
+                   <!--ele não tem o $ 322 depois como ocorre no primeiro item acima por isso estou apenas comentando o small
+                   <small>$ 322</small>-->
+                    </a>
+                </li>
+                
+                <!--Quarto item da lista de menu(Dashbord)-->
+                <li><a href="#">
+                 
+                 <!--Este codigo eu copie e colei do site fontawesome, cliquei em icones, pesquisei o nome do icone, identifiquei e copiei o codigo-->
+                  <i class="fas fa-cubes"></i>
+                  
+                   <span>My Projects</span>
+                   <!--ele não tem o $ 322 depois como ocorre no primeiro item acima por isso estou apenas comentando o small
+                   <small>$ 322</small>-->
+                    </a>
+                </li>
+                
+                <!--Quarto item da lista de menu(Dashbord)-->
+                <li><a href="#">
+                 
+                 <!--Este codigo eu copie e colei do site fontawesome, cliquei em icones, pesquisei o nome do icone, identifiquei e copiei o codigo-->
+                  <i class="fas fa-cog"></i>
+                  
+                   <span>Settigns</span>
+                   <!--ele não tem o $ 322 depois como ocorre no primeiro item acima por isso estou apenas comentando o small
+                   <small>$ 322</small>-->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        
+    </aside>
+    
+    <!--Usada para dividir a página em seções, o id é a propriedade de identificação, no nosso caso identificamos ela como principal -->
+    <section id="principal">
+    
+        <!--Cabeçalho da seção-->
+        <header>Cabeçalho</header>
+
+        <!--div módulos é a div mão-->
+        <div class="modulo">
+
+           <!--Div abas-->
+           <div class="abas">Abas</div>
+
+           <!--div container-->
+           <div class="container">Container
+               
+               <div class="canvas">Canvas</div>
+           </div>
+
+        </div>
+    </section>
+</body>
+</html>
