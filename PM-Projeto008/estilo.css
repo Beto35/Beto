@@ -1,8 +1,9 @@
-/*3º vídeo*/
+/*4º vídeo*/
 body {
     /*faz com que os elementos dentro do body, fiquem alinhados um ao lado do outro*/
     display: flex;
     background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
 }
 
 /*Parametrização do menu*/
@@ -28,6 +29,53 @@ aside h1 span {
     visibility: hidden;
 }
 
+/*Zero todas as margens do menu*/
+aside ul {
+    margin: 0; padding: 0;
+}
+
+
+/*Retiro os bolets point(marcadores) dos links do menu*/
+aside li {
+    list-style: none;
+    height:50px;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+aside li:hover{
+    background-color: #151524;
+    border-left: 3px solid #ffb946;
+    cursor: pointer;
+    /*se habilitar essa linha, tira o efeito de movimento do menu ao passar o mouse
+    padding-left: 12px;*/
+}
+
+
+aside li i{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+
+/*troco a cor dos links do menu/ Retiro o sublinhado*/
+aside li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+aside li small{
+    color:rgba(255, 255, 255, 0.6);
+    float: right;
+    margin-right: 15px;
+}
+
 
 
 
@@ -36,17 +84,6 @@ section#principal {
     width: 100%;
 }
 
-/*Retiro os bolets point(marcadores) dos links do menu*/
-aside li {
-    list-style: none;
-    
-}
-
-/*troco a cor dos links do menu/ Retiro o sublinhado*/
-aside li a {
-    color: #fff;
-    text-decoration: none;
-}
 
 /*A altura e cor de fundo da header*/ 
 section#principal header {
