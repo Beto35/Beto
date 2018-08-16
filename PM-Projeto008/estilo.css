@@ -9,20 +9,22 @@ body {
 /*Parametrização do menu*/
 aside {
     /*Largura e cor de fundo do menu*/
-    width: 200px;
+    width: 220px;
     background-color:#242536;
     color:#fff;
 }
 
 /*insiro o logotipo como background/ configuro para não repetir/ zero as margens/defino altura/ Centralizo /troco a cor do fundo*/
 aside h1 {
-    background-image: url(logo.png);
+    background-image: url(logomenor.jpg);
     background-repeat: no-repeat;
     margin: 0;
     height: 60px;
+    
     background-position: center center;
     background-color:#151524;
 }
+
 
 /*Oculto o texto do logotipo*/
 aside h1 span {
@@ -50,8 +52,8 @@ aside li:hover{
     background-color: #151524;
     border-left: 3px solid #ffb946;
     cursor: pointer;
-    /*se habilitar essa linha, tira o efeito de movimento do menu ao passar o mouse
-    padding-left: 12px;*/
+    /*se desabilitar essa linha, ativa o efeito de movimento do menu ao passar o mouse*/
+    padding-left: 12px;
 }
 
 
@@ -89,6 +91,18 @@ section#principal {
 section#principal header {
     height: 60px;
     background-color: #242536;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    
+}
+/*Tamanho da imagem do usuário*/
+section#principal header img{
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    border: none;
 }
 
 /*A altura e cor de fundo das abas*/ 
@@ -98,6 +112,35 @@ section#principal .modulo .abas {
     color: #000;
     border-bottom: 1px solid e6e6e6;
 }
+
+/*configurando o submenu*/
+/*zero as margens e padding e ajusto a margem esquerda para 50px*/
+section#principal .modulo .abas ul{
+    margin: 0; padding: 0;
+    margin-left: 50px;
+}
+
+/*coloco os elementos em comportamento de linha e centralizo*/
+section#principal .modulo .abas li{
+    display: inline-block;
+    line-height: 60px;
+}
+
+
+section#principal .modulo .abas li a{
+    margin-right: 40px;
+    text-decoration: none;
+    color:#0f0f0f;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;display: inline-block;
+}
+
+section#principal .modulo .abas li a:hover{
+    color:#ffb946;
+    box-shadow: 0px -3px 0px #ffb946 inset;
+}
+
 
 /*A altura e cor de fundo dos containes*/ 
 section#principal .modulo .container {
