@@ -56,7 +56,9 @@ aside li:hover{
     padding-left: 12px;
 }
 
-
+/*Código relacionado aos icones do menu*/
+/*coloco uma margin-rigth de 5px*/
+/*Coloco a altura e largura de 20px e alinho ao centro*/
 aside li i{
     margin-right: 5px;
     height: 20px;
@@ -87,7 +89,10 @@ section#principal {
 }
 
 
-/*A altura e cor de fundo da header*/ 
+/*A altura e cor de fundo da header*/
+/*Uso o display flex e aling-items para alinhar ao centro*/
+/*Uso o justify-content: flex-end para colocar o avatar no final da linha*/
+/*e coloco um espaço a direita para não ficar colado*/
 section#principal header {
     height: 60px;
     background-color: #242536;
@@ -126,7 +131,10 @@ section#principal .modulo .abas li{
     line-height: 60px;
 }
 
-
+/*Configuração relacionada ao sub menu(Conta e Relatório)*/
+/*Coloco uma margem de 40px, retiro o sublinhado*/
+/*Coloco uma cor escura, transformo em maiusculo*/
+/*Coloco a font no tamanho 14px, em linha*/
 section#principal .modulo .abas li a{
     margin-right: 40px;
     text-decoration: none;
@@ -136,6 +144,7 @@ section#principal .modulo .abas li a{
     font-weight: bold;display: inline-block;
 }
 
+/*Coloco um hove para mudar o estado ao passar o mouse*/
 section#principal .modulo .abas li a:hover{
     color:#ffb946;
     box-shadow: 0px -3px 0px #ffb946 inset;
@@ -144,7 +153,7 @@ section#principal .modulo .abas li a:hover{
 
 /*A altura e cor de fundo dos containes*/ 
 section#principal .modulo .container {
-    height: 350px;
+    height: 300px;
     color: #000;
     padding: 15px;
 }
@@ -194,13 +203,45 @@ form select{
     color: #c5c5c5;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
     color:#c5c5c5;
 }
 
 form li.Ok{
-    background-image: url(okteste.png);
+    background-image: url(Okteste.png);
     background-repeat: no-repeat;
     background-position: top 10px right;
     width: 430px;
 }
+
+
+form button {
+    
+    width: 400px;
+    height: 40px;
+    background-color: #3aca60;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.confirmacoes li {
+    
+    font-size: 14px;
+    display: flex;
+    width: 400px;
+    
+}
+
+
+.confirmacoes input {
+    
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+} 
+
+
