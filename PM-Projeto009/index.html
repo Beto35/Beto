@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto 009</title>
+    <!--Os arquivos css abaixo estão em uma pasta chamada css, para linkar fiz conforme abaixo-->
+    <!--Primeiro digitei o nome da pasta, coloquei a barra e o nome do arquivo("css/principal.css")-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/principal.css">
+    
+    
+</head>
+<body>
+  
+  <!--CRIO A DIV CHECKOUT-->
+   <div class="checkout">
+      
+      <!--CRIO A HEADER(cabeçalho)-->
+       <header>
+        
+           <!--Crio uma div para colocar o conteudo da header--> 
+           <div>
+               <h1>Checkout</h1>
+               <span>Shipping > <strong>Payment Method</strong> > Confirmation</span>
+           </div>
+           
+           <a href="#"> <span>Fechar</span></a>  
+       </header>
+       
+       
+       <!--CRIO O MAIN(principal)-->
+       <main>
+        
+           <!--CRIO A DIV CARTAO--> 
+           <div class="cartao">
+               
+               <!--CRIO A DIV wallet-->
+               
+               <div class="wallet">
+                   
+                   <!--CRIO o h2 para Wallet--> 
+                   <h2>Wallet</h2>
+                   
+                   <!--Fazer a parte de cartão com <ul><li>--> 
+                   <ul>
+                      
+                      <!--Cartão visa-->
+                       <li>
+                           <a href="#">
+                               <img src="imagens/Visa.png" alt="">
+                               <small>Ending in 2222</small>
+                           </a>
+                        </li>
+                        
+                        <!--Cartão master-->
+                        <li>
+                           <a href="#">
+                               <img src="imagens/master.png" alt="">
+                               <small>Ending in 2222</small>
+                           </a>
+                        </li>
+                        
+                        
+                        <!--Cartão discover-->
+                        <li>
+                           <a href="#">
+                               <img src="imagens/Discover.png" alt="">
+                               <small>Ending in 1111</small>
+                           </a>
+                        </li>
+                      
+                   </ul>
+                   
+               </div>
+               
+               
+               <!--Esta é outra forma de fazer formulário, coloco uma div-->
+               <div class="newcard">
+                   
+                   <!--Crio o form-->
+                   <form action="">
+                       
+                    <!--Crio o fieldset, que é algo como, conjunto de campos-->
+                       <fieldset>
+                           
+                           <!--Crio a legenda-->
+                           <legend>NEW CARD</legend>
+                           
+                           <!--Crio os inputs-->
+                           <input type="text" placeholder="Name on card">
+                           <input type="text" placeholder="1111-1111-1111-1112">
+                           <input type="text" class="data" placeholder="mm/yy">
+                           <input type="text" class=cvc placeholder="cvc">
+                           
+                           
+                           <label for="addwallet">
+                           <input type="checkbox" name="Addwallet">
+                           Add card to wallt
+                           </label>
+                           
+                           <button>Continue</button>
+                       </fieldset>
+                   </form>
+               </div>
+               
+           </div>  
+           
+           
+             <!--CRIO A DIV RESUMOS-->
+             <div class="resumos">
+                 
+                 <ul class="produtos">
+                     
+                     <li>
+                         <img src="imagens/bota.png" alt="bota preta">
+                         <div class="detalhes">
+                             <h3>The chelsea boot</h3><small>Black</small>
+                             <span>Quantiy: 1</span>
+                         </div>
+                         <span class="Preco">
+                             $235
+                         </span>
+                     </li>
+                     
+                     
+                     <!--item 2-->
+                     <li>
+                         <img src="imagens/mochila.png" alt="Mochila de costa">
+                         <div class="detalhes">
+                             <h3>The twill snap backpack</h3><small>Reverse denim + brown leather</small>
+                             <span>Quantiy: 1</span>
+                         </div>
+                         <span class="Preco">
+                             $65  
+                         </span>
+                     </li>
+                     
+                     
+                     <!--item 3-->
+                     <li>
+                         <img src="imagens/bolsa.png" alt="bolsa">
+                         <div class="detalhes">
+                             <h3>The twill zip tote</h3><small>Reverse denim + black leather</small>
+                             <span>Quantiy: 1</span>
+                         </div>
+                         <span class="Preco">
+                             $48  
+                         </span>
+                     </li>
+                     
+                     
+                     <!--item 4-->
+                     <li>
+                         <img src="imagens/Cachecol.png" alt="Cachecol preto">
+                         <div class="detalhes">
+                             <h3>The twill zip tote</h3><small>Reverse denim + black </small>
+                             <span>Quantiy: 1</span>
+                         </div>
+                         <span class="Preco">
+                             $78
+                         </span>
+                     </li>
+                    </ul>
+                     
+                     <!--Tabela-->
+                      <!--o conceito de tabela aqui é diferenciado-->
+                     <table>
+                        
+                        <tbody>
+                            <!--Table row=linha-->
+                            <tr>
+                                    <!--Table Header=cabeçalho-->
+                                <th scope="row">SubTotal</th>
+                                 <!--Table data=dados-->
+                                <td>$398</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">Shipping</th>
+                                <td>Free</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">Taxes</th>
+                                <td>12.12</td>
+                            </tr>
+                        </tbody>
+                        
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Total</th>
+                                <td>$410.12</td>
+                            </tr>
+                        </tfoot>
+                         
+                     </table>
+                     
+                
+                 
+             </div>
+           
+       </main>
+       
+       
+   </div> 
+</body>
+</html>

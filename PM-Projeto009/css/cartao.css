@@ -1,0 +1,136 @@
+/*Defino Altura e Largura da div cartão*/
+.cartao{
+    height: 100px;
+    width: 55%;
+  
+}
+
+/*Cor, tamanho e margin do h2*/
+.cartao .wallet h2{
+    color:#777879;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+/*Coloco os cartões em comportamento de linha*/
+/*Centralizo os cartões*/
+.cartao .wallet ul{
+    display: flex;
+    justify-content: center;
+}
+
+/*Retira os bolet points da li*/
+.cartao .wallet li{
+    
+    list-style: none;
+    padding: 15px;
+    margin: 10px;
+}
+
+/*Coloco um hover para mudar o estado ao passar o mouse*/
+.cartao .wallet li:hover{
+    
+   background-color: #f5f9fd;
+   box-shadow: inset 0 0 2px #d1e3f5;
+   border-radius: 4px;
+}
+
+/*coloca o comportamento do texto do cartão em bloco*/
+.cartao .wallet small{
+    display: block;
+    text-align: center;
+}
+
+
+/*formata os links dos cartões*/
+
+.cartao .wallet a{
+    
+    text-decoration: none;
+    color: #c6c6c6;
+    font-size: 12px;
+}
+
+
+/*Retiro as bordas dos itens do fieldset, centralizo*/
+.cartao .newcard fieldset{
+   border: none;
+   text-align: center;
+    
+}
+
+/*formata o legend*/
+.cartao .newcard legend{
+    font-size: 16px;
+    color: #777879;
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+    padding-bottom: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    
+}
+
+/*Ajusta a largura e altura dos inputs*/
+.cartao .newcard input{
+    width: 270px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid #dfdfdf;
+    border-radius: 2px;
+    
+}
+
+/*Ajusta a largura dos inputs data e cvc*/
+/*como não são todos os imput coloque o imput que tem a class data*/
+.cartao .newcard input.data{
+    width: 149px;
+    margin-right: 10px
+}
+
+
+/*como não são todos os imput coloque o imput que tem a class cvc*/
+.cartao .newcard input.cvc{
+    width: 86px;
+}
+
+
+
+/*Coloco o código para melhor renderização*/
+.cartao ::-webkit-input-placeholder{
+    color: #c4cbd0;
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+
+
+/*Formata o botão*/
+.cartao .newcard button{
+    width: 295px;
+    padding: 15px;
+    background-color: #84d654;
+    font-size: 16px;
+    font-family: 'muliextrabold';
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+}
+
+/*Formata o input que está dentro do label*/
+.cartao .newcard label input{
+    width: 20px;
+    height: 20px;
+}
+
+
+/*Formata o label*/
+.cartao .newcard label{
+    display: flex;
+    margin-left: 35px;
+    color: #777879;
+    font-size: 14px;
+}

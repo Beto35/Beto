@@ -1,0 +1,52 @@
+/*É importante lembrar que para esse projeto criamos 4 arquivos css, são eles*/
+/*principal.css, header.css, cartao.css, resumo.css*/
+/*OBS: Apenas o arquivo principal.css está linkado no início do html*/
+/*Os demais, serão importados conforme abaixo.*/
+
+
+/*Começo importando o arquivo header.css /depois depois cartao.css*/ 
+@import url(header.css);
+@import url(cartao.css);
+@import url(resumos.css);
+
+/*Centralizo os elementos do html*/
+/*Ajusto a altura para 100%, coloco um bacground*/
+/*para colocar a imagem de fundo, tive que subir um nível da seguinte forma*/
+/*Colocando ../pasta do projeto/pasta das imagens/nome da imagem*/
+html{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(../imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'muliregular';
+    font-size: 12px;
+}
+
+
+/*Zero todas as margens e padding*/
+h1, h2, h3, ul{
+    margin: 0; padding: 0;
+}
+
+
+/*Para colocar altura e largura basta digitar W688+tab e h558+tab*/
+.checkout{
+    width: 688px;
+    height: 558px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.27);
+}
+
+
+/*Agora coloco a div cartão ao lado da div resumos*/
+.checkout main{
+    display: flex;
+}
+
+
+
+
+

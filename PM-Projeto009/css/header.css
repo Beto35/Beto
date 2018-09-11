@@ -1,0 +1,59 @@
+/*coloco a altura da header=40px*/
+/*em comportamento de linha*/
+/*Ajusto para ficar um a direita e outro a esquerda e centralizo*/
+/*Coloco um padding de 20px a esquerda e a direita uma borda inferior de 1px*/
+header{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/*coloco os elementos da div da header em comportamento de linha*/
+header div{
+    display: flex;
+    align-items: center;
+}
+
+/*Formato a palavra Checkout da header*/
+header h1{
+    font-size: 18px;
+    font-family: 'muliextrabold';
+    color: #5e5f5f;
+}
+
+/*Formato o texto da span da header*/
+header span{
+    color: #4a4a4a;
+    opacity: 0.5;
+    margin-left: 20px;
+}
+
+/*Formato a palavra Payment Method da header*/
+header strong{
+    font-family: 'muliextrabold';
+}
+/*Coloco a imagem do X para fechar*/
+header a{
+    background-image: url(../imagens/Fechar.png);
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 17px;
+    
+}
+
+/*Escondo o nome fechar e deixo apenas a imagem do X aparecendo*/
+header a span{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
