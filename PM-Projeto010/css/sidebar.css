@@ -1,0 +1,98 @@
+
+/* Coloco uma cor de fundo no body, ajusto a altura=10vw e a font */
+body{
+    background-color: #f5f8f9;
+    font-family: 'lato', sans-serif;
+}
+
+/* Coloco uma cor de fundo no asidde ajusto a altura=10vw e centralizo todos elementos */
+/* Como estou usando framework Bulma o padding não funcionou. neste caso é preciso adicionar o (!important) para priorizar, conforme abaixo. */
+
+aside{
+    background-color: #3a3c40;
+    text-align: center;
+    padding: 50px !important;
+}
+
+aside img{
+    width: 140px;
+    height: 140px;
+}
+
+/* A justo a cor do nome para laranja e coloco tudo maiúsculo */
+aside h1{
+    color: #f5a623;
+    text-transform: uppercase;
+    
+    /* Defino o peso da font= 700 que é = Bold e o tamanho=24px ou 1.5em/ segue site para converter px para em  */
+    /* http://pxtoem.com/ */
+    font-weight: 700;
+    font-size: 1.5em;
+    
+    
+}
+
+/* Ajusto a cor do cargo para branca/ Defino o peso da font= 700 que é = Bold e o tamanho=16px ou 1em; */
+aside h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+
+aside .button{
+    background-color: #f9a640 !important;
+    text-transform: uppercase;
+    font-size: 0.875em !important;
+    padding: 20px 30px 20px 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    /* Para colocar box-shadow precisa transformar a cor para rgb e adicionar o canal alfa de 0.6 que é 60%/ para isso acesse o site hex to rgb converter --> 
+    https://www.webpagefx.com/web-design/hex-to-rgb/ 
+    coloque o hexadecimal da cor e copie o rgb*/
+    box-shadow: 0px 4px 0px 0px rgba(245,166,35, 0.6);
+    
+}
+
+
+aside .rede-sociais{
+    margin-top: 10px;
+}
+
+
+aside .rede-sociais li{
+    display: inline;
+    margin-right: 5px;
+}
+
+
+aside .rede-sociais li a{
+    color: #fff;
+    font-size: 1.3em;
+}
+
+aside .habilidades{
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* formato a cor, peso e tamanho do h3*/
+aside .habilidades h3{
+    
+    color: #eeeeee;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* formato a cor, peso e tamanho do small*/
+aside .habilidades small{
+    color: #8fa4af;
+    font-size: 0.750em;
+}
+
+aside .habilidades progress{
+    margin-bottom: 5px;
+    
+}
+

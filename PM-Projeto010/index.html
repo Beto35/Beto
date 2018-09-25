@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto 010</title>
+    
+     <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Para usar os icones do site font awesome icons pelo framework Bulma, vá em documentation/overview/start/ role para baixo, copie o link Font Awesome icons e Cole aqui logo abaixo do link do viewport, conforme abaixo. -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    
+    <!-- Para usar o link das fonts, acesse o google font/ na lupa, pesquise o nome da font/ Se desejar pegar todos os estilos dessa font copie o 1º link, senão, clique em CUSTOMIZE, selecione os estilos light, regular, bold/ mude para EMBED, copie o link/ Cole aqui logo abaixo do link do viewport, conforme abaixo. -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    
+    <!-- Link do Framework Bulma, o mesmo é adquirido acessando o site Bulma.io/ Documentation/ Overview/ Start/ 2 Use the CDN/ 3º linck-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    
+    <!-- 1º parte do currículo -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    
+    <!-- 2º parte do currículo -->
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+   
+   <!-- Crio uma div container para me possibilitar centralizar as ceções da tela -->
+   <div class="container">
+       
+       <!-- Crio a div com a class columns que está relacionada ao framework Bulma -->
+        <div class="columns">
+              
+              <!-- crio a tag aside utilizada para fazer sidebar, que é a primeira parte do currículo -->
+              <!-- O is-4 indica que a sidebar será de 4 coluna -->
+               <aside class="column is-4">
+                    <img src="imagens/Beto-Avatar.jpg" alt="">
+                    <h1>Gilberto Filho</h1>
+                    <h2>
+                    Programador
+                    <!--Full Stack JavaScript Developer-->
+                    </h2>
+                    
+                    <!-- coloquei o botão usando o framework Bulma -->
+                    <!-- acessei Bulma.io/ documentation/ overview/ elements/ button/ copiei o 3º link is-info/ e para definir o tamanho copiei o 4º link is-large -->
+                    <a href="https://beto35.github.io/Beto/" class="button is-info is-large">Portfólio</a>   
+                    
+                    
+                    <!-- Redes sociais-->
+                    
+                    <ul class="rede-sociais">
+                       
+                        <!-- github -->
+                        <li>
+                           <a href="https://github.com/Beto35/Beto"><i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                                              
+                        <!-- linkedin -->
+                        <li>
+                           <a href="#"><i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                        <!-- facebook -->
+                        <li>
+                           <a href="https://www.facebook.com/gilberto.lima.37604"><i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        
+                         <!-- Whatsap -->
+                        <li>
+                           <a href="https://bit.ly/2QNajHh"><i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        
+                        <!-- twitter -->
+                        <li>
+                           <a href="#"><i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        
+                        <!-- instagram -->
+                        <li>
+                           <a href="https://www.instagram.com/gilbertojjb/"><i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                    <!-- para colocar as barras de conhecimentos acesse digite o html normal e as barras, acesse o bulma.io/ documentation/elements/progress e escolhe a barra. -->
+                    
+                    <div class="habilidades">
+                        <h3>Conhecimentos</h3>
+                        
+                        <ul>
+                           
+                           <li><small>Pacote Office</small>
+                            <progress class="progress is-warning is-small" value="75" max="100">75%</progress>
+                            
+                            </li>
+                           
+                            <li><small>HTML e CSS</small>
+                            <progress class="progress is-warning is-small" value="45" max="100">45%</progress>
+                            
+                            </li>
+                            
+                            
+                            
+                            <li><small>JavaScript</small>
+                            <progress class="progress is-warning is-small" value="15" max="100">15%</progress>
+                            
+                            </li>
+                            
+                            <li><small>VBA</small>
+                            
+                            <progress class="progress is-warning is-small" value="30" max="100">30%</progress>
+                            </li>
+                            
+                            <li><small>SQL</small>
+                            
+                            <progress class="progress is-warning is-small" value="45" max="100">45%</progress>
+                            </li>
+                            
+                            <li><small>Delphi</small>
+                            
+                            <progress class="progress is-warning is-small" value="15" max="100">15%</progress>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                        
+               </aside>
+               
+
+             <!-- crio a tag article utilizada para fazer sites com muitos texto, tais como: artigos, Blogs, site de noticias. que é a segunda parte do currículo -->
+             <!-- O is-8 indica que a o Principal será de 8 coluna -->
+              <article class="column is-8">
+               
+               <!-- A div content é uma class do bulma, sem ela a formatação dos elementos não funcionam. -->
+                <div class="content">
+                    <!-- coloco a palavra resumo acompanhado de um icone de fontawesome -->
+                    <h3><i class="far fa-file-alt"></i>Resumo</h3>
+                    
+                    
+                    <p>Analista de Logística. Com mais de 9 anos de vivência prática. É pós_Graduado em Logística Empresarial pela Faculdade de Olinda de Ciências Contábeis e Administrativas. Graduado em Logística Pela Faculdade Instituto Brasileiro de Gestão e Marketing. Técnico em Logística pela Escola Técnica GETEC.</p>
+                    
+                    <!--
+                    <p>Atualmente vem desenvolvendo Projetos em Sistemas WEB Aplicados A Logística. É idealizador do LOGTATICA, Treinamento prático voltado a profissionais de Logística, onde desenvolve materiais para treinamentos práticos em projetos voltados a Logística.</p>
+                    -->
+                    
+                     <h3><i class="fas fa-briefcase"></i>Experiência</h3>
+                     
+                      <!-- 1ª instituição -->
+                     <div class="instituicao columns">
+                         <div class="column is-4">
+                            <h4>GRUPO PÃO DE AÇÚCAR</h4>
+                            <h5>Analista de Planejamento</h5>
+                            <small>Set 2012 - Até o momento</small>
+                             
+                         </div>
+                         
+                         <div class="column">
+                             
+                             <p>Atuando no Supply Chain, responsável pelas Categorias de Não Alimentos e Drogaria. Fazendo planejamento e acompanhamento do nível de estoque nos 3 Centro de Distribuições, Acompanhando o abastecimento de 56 Lojas em 8 UFs do Nordeste. Acompanhando as Importações, priorizando os agendamentos dos produtos de Cabotagem e TRs em Demurragem e transferência..</p>
+                             
+                         </div>
+                     </div>
+                    
+                    
+                    <!-- 2ª instituição -->
+                     <div class="instituicao columns">
+                         <div class="column is-4">
+                            <h4>GRUPO TPC-Logística</h4>
+                            <h5>Encarregado de Logística</h5>
+                            <small>Ago 2011 - até Maio 2012</small>
+                             
+                         </div>
+                         
+                         <div class="column">
+                             
+                             <p>Atuando com operações no Centro de distribuição da Natura. Participei do projeto de implantação do CD, liderava equipe. Fazia Análise dos envios de pedidos para linha de produção de acordo com a ordem de entrada e a programação de expedição. Análise do PRD (Previsão de separação de pedidos), Análise de corte de produtos do pedido da CN nos casos em que os mesmos não se encontravam disponíveis no estoque no momento da separação. Análise e divulgação dos indicadores de produção e faturamento hora-a-hora. Análise de cancelamento de pedidos. Interface com as demais áreas operacionais (Recebimento, Estoque, Abastecimento, Produção e Expedição.</p>
+                             
+                         </div>
+                     </div>
+                    
+                    
+                    
+                    <h3><i class="fas fa-trophy"></i>Formação</h3>
+                    
+                    
+                    <!-- 1ª instituição -->
+                     <div class="instituicao columns">
+                         <div class="column is-4">
+                            <h4>MBA em Logística</h4>
+                            <h5>FOCCA</h5>
+                            <small>Jan 2015 - até o momento</small>
+                             
+                         </div>
+                         
+                         <div class="column">
+                             
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo eum provident, nisi dicta nihil quae voluptatem ex similique minus tenetur, perspiciatis facere, quibusdam omnis sunt earum! Aliquam repudiandae soluta atque.</p>
+                             
+                         </div>
+                     </div>
+                    
+                    
+                    <!-- 2ª instituição -->
+                     <div class="instituicao columns">
+                         <div class="column is-4">
+                            <h4>Graduação em Logística Empresarial</h4>
+                            <h5>IBGM</h5>
+                            <small>Jan 2015 - até o momento</small>
+                             
+                         </div>
+                         
+                         <div class="column">
+                             
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo eum provident, nisi dicta nihil quae voluptatem ex similique minus tenetur, perspiciatis facere, quibusdam omnis sunt earum! Aliquam repudiandae soluta atque.</p>
+                             
+                         </div>
+                     </div>
+                    
+                </div>
+              </article>
+ 
+        </div>
+       
+   </div>
+    
+   
+</body>
+</html>
